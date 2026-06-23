@@ -1,0 +1,24 @@
+1.Uma API (Application Programming Interface ou Interface de Programação de Aplicações) é um conjunto de regras e padrões que permite que diferentes 
+programas ou sistemas se comuniquem entre si de forma padronizada, sem que um precise conhecer os detalhes internos de funcionamento do outro.
+Analogia: Imagine que você quer ligar a luz, ajustar o volume da TV ou abrir a garagem da sua casa. Você não precisa entender como funciona a fiação 
+elétrica ou o motor da garagem. Você simplesmente usa o interruptor, o controle remoto ou o botão da garagem. Esses dispositivos são as "APIs" da sua 
+casa — eles fornecem uma interface simples e padronizada para você interagir com sistemas complexos que estão por trás.
+
+2.a) Listar todos os produtos de uma loja - GET
+b) Cadastrar um novo cliente - POST
+c) Apagar uma conta de usuário - DELETE
+d) Atualizar o preço de um produto - PUT (ou PATCH, sendo PATCH mais comum para atualizações parciais)
+
+3.CRUD é um acrônimo que representa as quatro operações básicas em um banco de dados ou sistema:
+
+C — Create (Criar) - POST
+R — Read (Ler/Consultar) - GET
+U — Update (Atualizar) - PUT ou PATCH
+D — Delete (Apagar) - DELETE
+
+4.{
+    "id": 42,
+    "nome": "Notebook Dell XPS 15",
+    "preco": 8999.90,
+    "disponivel": true
+  }
