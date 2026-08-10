@@ -1,11 +1,15 @@
 @baseUrl = http://127.0.0.1:5000
 
+###
+
 POST {{baseUrl}}/categorias
 Content-Type: application/json
 
 {
     "nome": "Programação"
 }
+
+###
 
 POST {{baseUrl}}/categorias
 Content-Type: application/json
@@ -14,9 +18,15 @@ Content-Type: application/json
     "nome": "Tio do Pavê"
 }
 
+###
+
 GET {{baseUrl}}/categorias/1
 
+###
+
 GET {{baseUrl}}/categorias
+
+###
 
 PUT {{baseUrl}}/categorias/2
 Content-Type: application/json
@@ -24,6 +34,8 @@ Content-Type: application/json
 {
     "nome": "Piadas de Tiozinho"
 }
+
+###
 
 POST {{baseUrl}}/piadas
 Content-Type: application/json
@@ -34,6 +46,8 @@ Content-Type: application/json
     "categoria_id": 1
 }
 
+###
+
 POST {{baseUrl}}/piadas
 Content-Type: application/json
 
@@ -42,6 +56,8 @@ Content-Type: application/json
     "resposta": "O garfo, porque tem muitos forks!",
     "categoria_id": 1
 }
+
+###
 
 POST {{baseUrl}}/piadas
 Content-Type: application/json
@@ -52,9 +68,15 @@ Content-Type: application/json
     "categoria_id": 2
 }
 
+###
+
 GET {{baseUrl}}/piadas
 
+###
+
 GET {{baseUrl}}/piadas/1
+
+###
 
 PUT {{baseUrl}}/piadas/1
 Content-Type: application/json
@@ -65,12 +87,22 @@ Content-Type: application/json
     "categoria_id": 1
 }
 
+###
+
 GET {{baseUrl}}/piadas/detalhes
+
+###
 
 GET {{baseUrl}}/categorias/1/piadas
 
+###
+
 GET {{baseUrl}}/piadas/busca?q=computador
 
+###
+
 DELETE {{baseUrl}}/piadas/2
+
+###
 
 DELETE {{baseUrl}}/categorias/1
