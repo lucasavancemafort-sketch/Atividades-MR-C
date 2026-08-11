@@ -151,6 +151,7 @@ def get_piada(id):
         return jsonify({"erro": "Piada não encontrada"}), 404
 
     return jsonify(dict(piada)), 200
+    
 @app.route("/piadas", methods=["POST"])
 def create_piada():
     dados = request.get_json()
