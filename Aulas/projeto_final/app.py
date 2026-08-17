@@ -298,7 +298,6 @@ def get_piadas_com_categoria():
 def get_piadas_por_categoria(categoria_id):
     conn = get_db_connection()
 
-    # Valida se categoria existe
     categoria = conn.execute(
         "SELECT * FROM categorias WHERE id = ?", (categoria_id,)
     ).fetchone()
